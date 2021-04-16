@@ -1,8 +1,13 @@
-DEST_IP_ADDR =  '127.0.0.1'
-DEST_PORT = 8000
-BUF_SIZE = 100
+DEST_IP_ADDR =  '127.0.0.1' # loopback interface address (localhost)
+DEST_PORT = 8000 # part used by server to listen
+BUF_SIZE = 100 # buffer size
 
 from socket import socket, AF_INET, SOCK_STREAM
+
+# 1. Create a TCP socket
+# 2. Connect to the server
+# 3. Send the message
+# 4. Close the socket
 
 s = socket(AF_INET, SOCK_STREAM)
 s.connect((DEST_IP_ADDR, DEST_PORT))    
