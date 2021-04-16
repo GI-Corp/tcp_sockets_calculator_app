@@ -5,3 +5,4 @@ The client app interactively accepts calculation command from user input, sends 
 App calculates for all valid entries as given below,
 For invalid entries, exception message is sent by the server.
 
+![screenshot1](https://user-images.githubusercontent.com/50765400/115020557-30910d80-9ed4-11eb-89fd-f9e5f6128617.JPG)
