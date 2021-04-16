@@ -1,8 +1,12 @@
-IP_ADDR = '127.0.0.1'
-PORT = 8000
-BUF_SIZE = 100
+IP_ADDR = '127.0.0.1' # loopback interface address (localhost)
+PORT = 8000 # port to listen on
+BUF_SIZE = 100 # buffer size
 
 from socket import socket, AF_INET, SOCK_STREAM
+
+# 1. Create a TCP socket
+# 2. Bind the socket to address and port
+# 3. Start listening to port
 
 def addNumbers(input, num1, num2):
     num1 = int(num1)
@@ -50,6 +54,13 @@ def doOperations(operator, value1, value2):
 with socket(AF_INET, SOCK_STREAM) as s:
     s.bind((IP_ADDR, PORT))
     s.listen()
+    
+    # 4. Accept a new connection from a client
+    # 5. Receive data from client
+    # 6. Process the data
+    # 7. Send the data to client
+    # 8. Close the connection
+    
     print('Waiting for a new connection')
     while True:
         conn, add = s.accept()
